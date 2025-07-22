@@ -1,0 +1,102 @@
+/* AboutSection.css */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5%;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-video-container {
+  width: 45%;
+}
+
+.video-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text-container {
+  width: 50%;
+  text-align: left;
+  color: black;
+  animation: pulseText 3s infinite alternate ease-in-out;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-text-container {
+  animation: none;
+}
+
+.title-accent {
+  color: rgb(206, 212, 217);
+  font-size: 24pt;
+}
+
+.title-accent::after {
+  content: " Creditor Academy";
+  color: rgb(53, 152, 219);
+}
+
+.title-underline {
+  display: block;
+  width: 140px;
+  height: 5px;
+  background: #5DADE2;
+  margin-top: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.about-title:hover .title-underline {
+  width: 100%;
+}
+
+.about-description {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: rgb(52, 73, 94);
+}
+
+@keyframes pulseText {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.01);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+  
+  .about-video-container,
+  .about-text-container {
+    width: 100%;
+  }
+  
+  .about-video-container {
+    margin-bottom: 30px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+  }
+}

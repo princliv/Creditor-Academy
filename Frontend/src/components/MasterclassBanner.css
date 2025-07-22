@@ -1,0 +1,104 @@
+.masterclass-hero-section {
+  width: 100%;
+  background: linear-gradient(135deg, #e8f0ff, #ffffff);
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.masterclass-hero-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.masterclass-hero-image-container {
+  width: 100%;
+}
+
+.masterclass-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.masterclass-hero-text {
+  padding: 30px 20px 40px;
+}
+
+.masterclass-hero-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #1f1f1f;
+  text-align: center;
+  background: #343535;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional extra highlight for key words */
+.highlight-word {
+  font-weight: 800;
+  background: linear-gradient(to right, #367dcf, #1a66d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.masterclass-hero-button {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #5fa8d3, #367dcf);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(95, 168, 211, 0.2);
+}
+
+.masterclass-hero-button:hover {
+  background: linear-gradient(135deg, #4c95c5, #2f6fbd);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(47, 111, 189, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .masterclass-hero-text {
+    padding: 20px 16px 30px;
+  }
+
+  .masterclass-hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .masterclass-hero-button {
+    padding: 10px 24px;
+    font-size: 1rem;
+  }
+}
